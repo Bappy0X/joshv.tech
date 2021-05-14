@@ -1,3 +1,5 @@
+const qualifications = require("./json/qualifications.json")
+
 function QualList({ qualifications }) {
     return (
         <ul>
@@ -11,25 +13,6 @@ function QualList({ qualifications }) {
 }
 
 export default function Qualifications() {
-    const qualifications = {
-        GCSE: [
-            {
-                name: "Computer Science",
-                level: 7
-            },
-            {
-                name: "Computer Science",
-                level: 7
-            }
-        ],
-        "A Level": [
-            {
-                name: "Computer Science",
-                level: 7
-            }
-        ]
-    }
-    
     return (
         <>
             <h1 className="accent">Qualifications</h1>

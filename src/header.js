@@ -8,8 +8,8 @@ export default function Header() {
                 </div>
                 <div className="col d-md-flex text-center text-md-left">
                     <div className="align-self-md-center">
-                        <h1 className="display-4">joshv.tech</h1>
-                        <h4 className="m-0 accent">Joshua Vaughan</h4>
+                        <h1 className="mb-1 accent display-4">Joshua Vaughan</h1>
+                        <h4>07518 387243</h4>
                     </div>
                 </div>
             </div>

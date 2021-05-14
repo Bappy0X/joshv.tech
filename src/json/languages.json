@@ -1,0 +1,49 @@
+[
+    {
+        "name": "Python",
+        "icon": "https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png",
+        "description": "Python is by far my most favourite language. It's incredibly useful for a massive variety of different applications, and is extremely friendly to developers.",
+        "libraries": [
+            {
+                "name": "Flask",
+                "icon": "https://invenio-software.org/static/img/logo-flask.svg?h=0076fbd8"
+            },
+            {
+                "name": "Discord.py",
+                "icon": "https://image.flaticon.com/icons/png/512/2111/2111370.png"
+            }
+        ]
+    },
+    {
+        "name": "C++",
+        "icon": "https://www.freeiconspng.com/uploads/c--logo-icon-0.png",
+        "description": "C Plus Plus is a low level language, great for building desktop applications."
+    },
+    {
+        "name": "JavaScript",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
+        "description": "I love JavaScript, it's an incredibly versatile language, and is used in a wide variety of applications.",
+        "libraries": [
+            {
+                "name": "React.js",
+                "icon": "https://clipground.com/images/react-logo-png-7.png"
+            },
+            {
+                "name": "Electron",
+                "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Electron_Software_Framework_Logo.svg/1200px-Electron_Software_Framework_Logo.svg.png"
+            }
+        ]
+    },
+    {
+        "name": "Ruby",
+        "icon": "https://uxwing.com/wp-content/themes/uxwing/download/07-design-and-development/ruby-programming-language.png"
+    },
+    {
+        "name": "R Lang",
+        "icon": "https://analisemacro.com.br/wp-content/uploads/2016/05/r-lang.png"
+    },
+    {
+        "name": "Lua",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Lua-Logo.svg/280px-Lua-Logo.svg.png"
+    }
+]

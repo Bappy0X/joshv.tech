@@ -1,0 +1,26 @@
+{
+    "GCSE": [
+        {
+            "name": "Computer Science",
+            "level": 7
+        },
+        {
+            "name": "Art & Design/Photography",
+            "level": 7
+        }
+    ],
+    "A Level": [
+        {
+            "name": "Computer Science",
+            "level": null
+        },
+        {
+            "name": "Business Studies",
+            "level": null
+        },
+        {
+            "name": "Public Services",
+            "level": null
+        }
+    ]
+}

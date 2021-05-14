@@ -1,36 +1,25 @@
-function ExperienceCard({ name }) {
+const experiences = require("./json/experiences.json")
+
+function ExperienceCard({ experience }) {
     return (
-        <p className="font-weight-bold">{name}</p>
+        <>
+            <div className="text-center">
+                <img src={experience.img} alt={experience.name} className="w-25"/>
+            </div>
+            <p className="font-weight-bold">{experience.name}</p>
+        </>
     )
 }
 
 export default function Experiences() {
-    const experiences = [
-        {
-            name: "Finance Work Experience"
-        },
-        {
-            name: "Teaching Work Experience"
-        },
-        {
-            name: "Vodafone Innovators Work Experience"
-        },
-        {
-            name: "BT Work Experience"
-        },
-        {
-            name: "Openreach Work Experience"
-        },
-        {
-            name: "Virgin Media Work Experience"
-        },
-    ]
     return (
         <>
             <h1 className="accent">Experiences</h1>
             {
                 experiences.map(experience => {
-                    return <ExperienceCard key={experience.name} name={experience.name}/>
+                    return (
+                        <ExperienceCard key={experience.name} experience={experience}/>
+                    )
                 })
             }
         </>
