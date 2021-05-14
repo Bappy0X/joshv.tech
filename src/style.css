@@ -55,15 +55,9 @@
 }
 
 @media (max-width: 1280px) {
-    #sidebar {
-        display: none;
-    }
-    #sidebarToggle {
-        display: block;
-    }
-    #trueContent {
+    /*#trueContent {
         padding-left: 0;  
-    }
+    }*/
     #frontPageText {
         margin-left: 0;
     }

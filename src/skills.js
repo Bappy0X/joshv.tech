@@ -78,33 +78,51 @@ export default function Skills() {
             ]
         },
         {
-            name: "Ruby",
-            icon: "https://uxwing.com/wp-content/themes/uxwing/download/07-design-and-development/ruby-programming-language.png",
-            state: "Next in Line",
+            name: "C++",
+            icon: "https://www.freeiconspng.com/uploads/c--logo-icon-0.png",
+            state: "Knowledgeable",
             description: ""
         },
         {
-            name: "React.js",
-            icon: "https://clipground.com/images/react-logo-png-7.png",
+            name: "JavaScript",
+            icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
+            category: "Applications",
+            state: "Fluent",
+            description: "Python is my favourite programming language.",
+            libraries: [
+                {name: "React.js", icon: "https://clipground.com/images/react-logo-png-7.png"}
+            ]
+        },
+        {
+            name: "Ruby",
+            icon: "https://uxwing.com/wp-content/themes/uxwing/download/07-design-and-development/ruby-programming-language.png",
             state: "Learning",
             description: ""
         },
         {
-            name: "C++",
-            icon: "https://www.freeiconspng.com/uploads/c--logo-icon-0.png",
-            state: "Knowledgeable",
+            name: "R Lang",
+            icon: "https://analisemacro.com.br/wp-content/uploads/2016/05/r-lang.png",
+            state: "Next in Line",
+            description: ""
+        },
+        {
+            name: "Lua",
+            icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Lua-Logo.svg/280px-Lua-Logo.svg.png",
+            state: "Fluent",
             description: ""
         },
     ]
     //This will most likely be moved to MongoDB
 
     return(
-        <div className="row">
-            {
-                skills.map(skill => {
-                    return <Skill key={skill.name} name={skill.name} icon={skill.icon} category={skill.category} state={skill.state} description={skill.description} libraries={skill.libraries} />
-                })
-            }
+        <div className="container">
+            <div className="row">
+                {
+                    skills.map(skill => {
+                        return <Skill key={skill.name} name={skill.name} icon={skill.icon} category={skill.category} state={skill.state} description={skill.description} libraries={skill.libraries} />
+                    })
+                }
+            </div>
         </div>
     )
 }

@@ -10,9 +10,9 @@ export default function App() {
   return (
     <>
       <Sidebar/>
-      <div id="trueContent">
+      <div id="trueContent" className="pl-sm-none">
         <FrontPage/>
-        <button id="sidebarToggle">Togg</button>
+        <button className="d-none d-md-block">Togg</button>
         <Skills/>
       </div>
     </>
