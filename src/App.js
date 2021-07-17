@@ -1,8 +1,8 @@
 import React from "react";
 
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import Image from "react-bootstrap/Image"
-import Form from "react-bootstrap/Form"
+//import Form from "react-bootstrap/Form"
 
 import icon from "./img/Icon.jpg"
 import banner from "./img/Banner.jpg"
@@ -11,7 +11,7 @@ import handwriting from "./img/Handwriting.png"
 function SocialMediaIcon({ type="fab", name, url, size=2.8, title }) {
 	return (
 		<li className="d-inline-block mx-3 text-center">
-			<a href={url} target="_blank" className="text-decoration-none text-light">
+			<a href={url} target="_blank" rel="noreferrer" className="text-decoration-none text-light">
 				<Row>
 					<Col>
 						<i className={`${type} fa-${name} fa-fw`} style={{fontSize: `${size}rem`}}></i>
