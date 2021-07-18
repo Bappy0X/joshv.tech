@@ -7,6 +7,7 @@ import Image from "react-bootstrap/Image"
 import icon from "./img/Icon.jpg"
 import banner from "./img/Banner.jpg"
 import handwriting from "./img/Handwriting.png"
+import signature from "./img/Signature.png"
 
 function SocialMediaIcon({ type="fab", name, url, size=2.8, title }) {
 	return (
@@ -84,11 +85,12 @@ export default function App() {
 					</ul>
 				</div>
 
-				<Row className="py-5 mx-0" style={{backgroundColor: "var(--my-red)", borderRadius: "25px 25px 0 0"}}>
+				<Row nogutters className="mx-0 p-5" style={{backgroundColor: "var(--my-red)", borderRadius: "25px 25px 0 0"}}>
 					<Col>
-						<h1 className="ml-5 my-0 secondary accent">joshv.tech</h1>
+						<h1 className="my-0 secondary accent">joshv.tech</h1>
 					</Col>
-					<Col>
+					<Col className="text-right">
+						<div style={{backgroundImage: `url('${signature}')`, backgroundSize: "contain", backgroundPosition: "right", backgroundRepeat: "no-repeat", height: "100%"}}></div>
 					</Col>
 				</Row>
 			</Container>
