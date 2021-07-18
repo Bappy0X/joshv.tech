@@ -11,7 +11,7 @@ import handwriting from "./img/Handwriting.png"
 function SocialMediaIcon({ type="fab", name, url, size=2.8, title }) {
 	return (
 		<li className="d-inline-block mx-3 text-center">
-			<a href={url} target="_blank" rel="noreferrer" className="text-decoration-none text-light">
+			<a href={url} target="_blank" rel="noreferrer" className="primary text-decoration-none">
 				<Row>
 					<Col>
 						<i className={`${type} fa-${name} fa-fw`} style={{fontSize: `${size}rem`}}></i>
@@ -29,18 +29,18 @@ function SocialMediaIcon({ type="fab", name, url, size=2.8, title }) {
 
 export default function App() {
 	return (
-		<div style={{backgroundColor: "#272D33", minHeight: "100vh"}}>
-			<Container className="bg-dark">
+		<div style={{backgroundColor: "#fff", minHeight: "100vh"}}>
+			<Container id="true-content">
 				<div className="mb-3">
 					<div style={{backgroundImage: `url('${banner}')`, backgroundSize: "cover", backgroundPosition: "center", borderRadius: "0 0 25px 25px", minHeight: "150px"}}></div>
 					<Row className="px-5" style={{marginTop: "-100px"}}>
 						<Col xs="12" md="6" className="text-center text-md-left">
-							<Image src={icon} style={{height: "200px", boxShadow: "0 0 0 5px white"}} roundedCircle></Image>
+							<Image src={icon} style={{height: "200px", boxShadow: "0 0 0 5px var(--my-red)"}} roundedCircle></Image>
 						</Col>
-						<Col className="d-md-flex text-center text-md-left text-light">
+						<Col className="d-md-flex text-center text-md-left">
 							<div className="align-self-md-center">
-								<h1 className="mb-1 accent display-4">Joshua Vaughan</h1>
-								<h4>joshv.tech</h4>
+								<h1 className="mb-1 primary accent display-4">Joshua Vaughan</h1>
+								<h4 className="primary">joshv.tech</h4>
 							</div>
 						</Col>
 					</Row>
@@ -68,9 +68,9 @@ export default function App() {
 					</Form.Row>
 				</Form>*/}
 
-				<p className="text-light mb-3 text-center">This site is still in development! Please check back soon! For now, check out my social medias:</p>
+				<p className="mb-3 primary text-center">This site is still in development! Please check back soon! For now, check out my social medias:</p>
 
-				<div class="text-center text-light mb-5">
+				<div class="text-center mb-5">
 					<ul className="list-unstyled m-0">
 						<SocialMediaIcon name={"linkedin"} url="https://www.linkedin.com/in/joshua-vaughan/" title="LinkedIn"/>
 						<SocialMediaIcon name={"dribbble"} url="https://dribbble.com/Bappy0X" title="Dribbble"/>
@@ -84,9 +84,13 @@ export default function App() {
 					</ul>
 				</div>
 
-				<div className="py-5" style={{backgroundColor: "#1B2127", borderRadius: "25px 25px 0 0"}}>
-					<h1 className="ml-5 text-light accent">joshv.tech</h1>
-				</div>
+				<Row className="py-5 mx-0" style={{backgroundColor: "var(--my-red)", borderRadius: "25px 25px 0 0"}}>
+					<Col>
+						<h1 className="ml-5 my-0 secondary accent">joshv.tech</h1>
+					</Col>
+					<Col>
+					</Col>
+				</Row>
 			</Container>
 		</div>
 	);
