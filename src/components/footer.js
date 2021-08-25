@@ -14,13 +14,15 @@ export default function Footer() {
     return (
         <Container className="fixed-bottom mb-3">
             <Row noGutters className="justify-content-center">
-                <MediaIcon name="GitHub" iconName="fab fa-github"/>
+                <MediaIcon name="GitHub" icon="fab fa-github"/>
                 <Divider/>
-                <MediaIcon name="LinkedIn" iconName="fab fa-github"/>
+                <MediaIcon name="LinkedIn" icon="fab fa-linkedin"/>
                 <Divider/>
-                <MediaIcon name="Discord" iconName="fab fa-github"/>
+                <MediaIcon name="Discord" icon="fab fa-discord"/>
                 <Divider/>
-                <MediaIcon name="Dribbble" iconName="fab fa-github"/>
+                <MediaIcon name="Dribbble" icon="fab fa-dribbble"/>
+                <Divider/>
+                <MediaIcon name="YouTube" icon="fab fa-youtube"/>
             </Row>
         </Container>
     )

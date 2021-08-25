@@ -20,7 +20,8 @@ ReactDOM.render(
 				</Col>
 				<Col className="text-center text-sm-left align-self-center">
 					<h1 className="accent primary">Joshua Vaughan</h1>
-					<p>Test</p>
+					<p>Great to see you! I'm Josh - a developer from England. I have experience working with multiple technologies, I also love coffee and the gym.</p>
+					<h4><a href="https://open.spotify.com/playlist/3Al07FeGVgigYo3IX9wuhO?si=dbfef3e582e54721" target="_blank" className="primary" style={{textDecoration: "none"}}><i className="fab fa-spotify mr-2 text-success"></i>Gym Essentials Playlist</a></h4>
 					<img src={signature} className="primary" style={{height: "50px"}} alt="My Signature"/>
 				</Col>
 			</Row>

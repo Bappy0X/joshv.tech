@@ -1,9 +1,9 @@
 import { Col } from "react-bootstrap";
 
-export default function MediaIcon({name}) {
+export default function MediaIcon({name, icon}) {
     return (
         <Col xs="auto">
-            <p className="text-muted mb-0">{name}</p>
+            <a className="text-muted mb-0" href="" style={{textDecoration: "none"}}><i className={icon}></i> {name}</a>
         </Col>
     )
 }
