@@ -18,9 +18,9 @@ export default function Footer() {
                 <Divider/>
                 <MediaIcon name="LinkedIn" icon="fab fa-linkedin" url="https://www.linkedin.com/in/joshua-vaughan/"/>
                 <Divider/>
-                <MediaIcon name="Discord" icon="fab fa-discord" url="https://discord.com/"/>
+                <MediaIcon name="Discord" icon="fab fa-discord" url="https://discord.com/FG7cxurrga"/>
                 <Divider/>
-                <MediaIcon name="Dribbble" icon="fab fa-dribbble" url="https://dribbble.com/Bappy0X"/>
+                <MediaIcon name="Dribbble" icon="fab fa-dribbble" url="https://dribbble.com/joshv-tech"/>
                 <Divider/>
                 <MediaIcon name="YouTube" icon="fab fa-youtube" url="https://www.youtube.com/channel/UCyAKeyc9I7gYRhzOV0ZadSg"/>
             </Row>
