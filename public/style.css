@@ -2,6 +2,9 @@
 
 :root {
     --my-red: #da3232;
+    --my-red-dark: #C11919;
+    --my-white: #f2f2f2;
+    --off-white: #f6f6f6;
 }
 
 body {
@@ -9,4 +12,24 @@ body {
 }
 .accent {
     font-family: "Pacifico", cursive !important;
+}
+
+.divider {
+    border-left: 2px solid var(--my-red);
+    height: 100%;
+}
+
+.primary {
+    color: var(--my-red) !important;
+}
+a.primary:hover  {
+    color: var(--my-red-dark) !important;
+}
+.secondary {
+    color: var(--off-white) !important;
+}
+
+#true-content {
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, var(--off-white) 10px, var(--off-white) 20px);
+    background-color: var(--my-white);
 }
