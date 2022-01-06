@@ -1,28 +1,21 @@
 import { Container, Row, Col } from "react-bootstrap";
 
-import MediaIcon from "./mediaIcon";
-
-function Divider() {
-    return (
-        <Col xs="auto" className="mx-3">
-            <div class="divider"></div>
-        </Col>
-    )
-}
+import Divider from "./divider"
+import Icon from "./icon";
 
 export default function Footer() {
     return (
         <Container className="fixed-bottom mb-3">
             <Row noGutters className="justify-content-center">
-                <MediaIcon name="GitHub" icon="fab fa-github" url="https://github.com/Bappy0X"/>
+                <Icon name="GitHub" icon="fab fa-github" url="https://github.com/Bappy0X" colour="text-muted"/>
                 <Divider/>
-                <MediaIcon name="LinkedIn" icon="fab fa-linkedin" url="https://www.linkedin.com/in/joshua-vaughan/"/>
+                <Icon name="LinkedIn" icon="fab fa-linkedin" url="https://www.linkedin.com/in/joshua-vaughan/" colour="text-muted"/>
                 <Divider/>
-                <MediaIcon name="Discord" icon="fab fa-discord" url="https://discord.com/FG7cxurrga"/>
+                <Icon name="Discord" icon="fab fa-discord" url="https://discord.com/FG7cxurrga" colour="text-muted"/>
                 <Divider/>
-                <MediaIcon name="Dribbble" icon="fab fa-dribbble" url="https://dribbble.com/joshv-tech"/>
+                <Icon name="Dribbble" icon="fab fa-dribbble" url="https://dribbble.com/joshv-tech" colour="text-muted"/>
                 <Divider/>
-                <MediaIcon name="YouTube" icon="fab fa-youtube" url="https://www.youtube.com/channel/UCyAKeyc9I7gYRhzOV0ZadSg"/>
+                <Icon name="YouTube" icon="fab fa-youtube" url="https://www.youtube.com/channel/UCyAKeyc9I7gYRhzOV0ZadSg" colour="text-muted"/>
             </Row>
         </Container>
     )
