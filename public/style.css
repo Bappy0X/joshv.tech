@@ -9,9 +9,14 @@
 
 body {
     font-family: "Poppins", sans-serif !important;
+    background-color: var(--my-white) !important;
 }
 .accent {
     font-family: "Pacifico", cursive !important;
+}
+
+.bg-accent {
+    background-color: var(--off-white);
 }
 
 .divider {
@@ -29,7 +34,6 @@ a.primary:hover  {
     color: var(--off-white) !important;
 }
 
-#true-content {
+#header, #footer {
     background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, var(--off-white) 10px, var(--off-white) 20px);
-    background-color: var(--my-white);
 }
