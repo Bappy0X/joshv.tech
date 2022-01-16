@@ -22,6 +22,7 @@ export default function Footer() {
                     <Col md="6" className="text-center text-md-left mt-md-auto">
                         <h1 className="primary accent mb-3">Joshua Vaughan</h1>
                         <p>Hey There! Great to see you! I'm Josh - a Software Consultant and Developer from Cheshire. I work with a wide variety of different technologies on the day-to-day.<br/><br/>Coffee and the gym are amongst my greatest interests.<br/><br/>I currently attended college; studying Computer Science, Business Studies and Public Services.</p>
+                        <p className="mb-0">Interested in working together? Let's talk!</p>
                         <Contact/>
                         <h5 class="mb-3"><a href="https://open.spotify.com/playlist/4fPtrJQWflMdV2gBGUCRU7?si=c141b47c34f64187" target="_blank" rel="noreferrer" className="primary" style={{textDecoration: "none"}}><i className="fab fa-spotify mr-2 text-success"></i>Morning Hip-Hop Playlist</a></h5>
                         <img src={signature} className="primary" style={{height: "50px"}} alt="My Signature"/>

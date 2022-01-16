@@ -13,7 +13,7 @@ export default function Footer() {
                         <p>Created with <i className="fas fa-heart"></i> by Joshua Vaughan (<a href="https://joshv.tech/" className="primary" target="_blank" rel="noreferrer">joshv.tech</a>)</p>
                     </Col>
                     <Col xs="6">
-                        <h3>Follow Me!</h3>
+                        <h3>Keep in Touch!</h3>
                         <Socials/>
                     </Col>
                 </Row>

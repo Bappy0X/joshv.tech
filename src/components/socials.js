@@ -14,7 +14,7 @@ export default function Socials() {
             <Divider/>
             <Icon name="YouTube" icon="fab fa-youtube fa-fw" url="https://www.youtube.com/channel/UCyAKeyc9I7gYRhzOV0ZadSg" colour="text-muted"/>
             <Divider/>
-            <Icon name="WhatsApp" icon="fab fa-whatsapp fa-fw" url="https://www.youtube.com/channel/UCyAKeyc9I7gYRhzOV0ZadSg" colour="text-muted"/>
+            <Icon name="WhatsApp" icon="fab fa-whatsapp fa-fw" url="https://wa.me/447518387243" colour="text-muted"/>
         </>
     )
 }
