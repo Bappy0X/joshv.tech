@@ -2,12 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
-import FrontPage from "./components/frontpage"
-import Footer from "./components/footer"
-import Divider from "./components/divider";
-import Contact from "./components/contact";
+import FrontPage from "./components/Frontpage"
+import Footer from "./components/Footer"
+import Divider from "./components/Divider";
+import Contact from "./components/Contact";
+import Portfolio from "./components/Portfolio";
 
 ReactDOM.render(
 	<>
@@ -15,7 +16,7 @@ ReactDOM.render(
 		<div id="body">
 			<div id="about-me" className="py-3">
 				<Container>
-					<h1>About Me</h1>
+					<h1 className="my-3 text-center font-weight-bold">ALL ABOUT ME</h1>
 					<h1>Languages &amp; Skills</h1>
 					<Row>
 						<Col className="text-right">
@@ -41,7 +42,7 @@ ReactDOM.render(
 							<p>Rust... Projects</p>
 						</Col>
 					</Row>
-					<h1>Certifications</h1>
+					{/* <h1>Certifications</h1>
 					<Row>
 						<Col>
 							<Card>
@@ -55,7 +56,7 @@ ReactDOM.render(
 									</Card.Text>
 								</Card.Body>
 								<Card.Body>
-									<Card.Link className="primary" href="#">View Certificate <i class="fas fa-external-link-alt"></i></Card.Link>
+									<Card.Link className="primary" href="#">View Certificate <i className="fas fa-external-link-alt"></i></Card.Link>
 								</Card.Body>
 							</Card>
 						</Col>
@@ -71,7 +72,7 @@ ReactDOM.render(
 									</Card.Text>
 								</Card.Body>
 								<Card.Body>
-									<Card.Link className="primary" href="#">View Certificate <i class="fas fa-external-link-alt"></i></Card.Link>
+									<Card.Link className="primary" href="#">View Certificate <i className="fas fa-external-link-alt"></i></Card.Link>
 								</Card.Body>
 							</Card>
 						</Col>
@@ -87,11 +88,11 @@ ReactDOM.render(
 									</Card.Text>
 								</Card.Body>
 								<Card.Body>
-									<Card.Link className="primary" href="#">View Certificate <i class="fas fa-external-link-alt"></i></Card.Link>
+									<Card.Link className="primary" href="#">View Certificate <i className="fas fa-external-link-alt"></i></Card.Link>
 								</Card.Body>
 							</Card>
 						</Col>
-					</Row>	
+					</Row> */}
 					{/* What I'm good at, https://dribbble.com/shots/17281813-NetSpring-Solutions */}
 					<h1>Education</h1>
 					<Row>
@@ -146,22 +147,23 @@ ReactDOM.render(
 					{/*  U+FE0F U+200D U+2642 U+FE0F */}
 				</Container>
 			</div>
+			<Portfolio/>
 			<div className="bg-accent py-3">
-				<Container>
+				{/* <Container>
 					<h1>Project Portfolio</h1>
-					{/* Show projects in columns, https://dribbble.com/shots/16047759-Bloom-Blog-Redesign, https://dribbble.com/shots/17279212-NFT-Web-Exploration */}
 					<ul>
-						<li>FBALeads Website</li>
-						<li>FBALeads App</li>
-						<li>230 Sqn.</li>
+						<li>FBALeads</li>
+						<li>230 Sqn. Website</li>
+						<li>Growpay</li>
+						<li>GaultonFitness</li>
 						<li>Boris Homemade Cakes</li>
 						<li>Scraper Application (Modern-Amazon?)</li>
 						<li>Rust Application (Rust-Quiz?)</li>
 						<li>Your Project</li>
 					</ul>
-				</Container>
+				</Container> */}
 			</div>
-			<div className="py-3">
+			{/* <div className="py-3">
 				<Container>
 					<h1>Testimonials</h1>
 				</Container>
@@ -175,7 +177,7 @@ ReactDOM.render(
 				<Container>
 					<h1>?</h1>
 				</Container>
-			</div>
+			</div> */}
 		</div>
 		<Footer/>
 	</>,

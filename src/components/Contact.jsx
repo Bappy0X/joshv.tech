@@ -1,7 +1,7 @@
 import { Row } from "react-bootstrap";
 
-import Divider from "./divider"
-import Icon from "./icon";
+import Divider from "./Divider"
+import Icon from "./Icon";
 
 export default function Contact() {
     return (
