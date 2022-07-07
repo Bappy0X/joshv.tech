@@ -6,7 +6,7 @@ import card from "./img/card.png";
 class Icon extends React.Component {
     render() {
         return(
-            <Col xs={this.props.fullWidth ? "6" :"auto"}>
+            <Col xs="auto" className="mb-2">
                 <a className={this.props.colour + " text-decoration-none"} href={this.props.url} target="_blank" rel="noreferrer"><i className={this.props.icon + " mr-1"}></i>{this.props.name}</a>
             </Col>
         )
@@ -16,7 +16,7 @@ class Icon extends React.Component {
 class Divider extends React.Component {
     render() {
         return(
-            <Col xs="auto" className="mx-3">
+            <Col xs="auto" className="mx-3 pb-2">
                 <div className="divider"/>
             </Col>
         )
@@ -45,7 +45,7 @@ export default class Home extends React.Component {
         return(
             <div id="header" onMouseMove={this.onMouseMove}>
                 <Row className="min-vh-100 no-gutters">
-                    <Col xs="12" className="text-center mt-auto">
+                    <Col xs="12" className="text-center my-3 mt-auto">
                         <img src={card} alt="My Business Card" style={{height: "500px", transformStyle: "preserve-3d", transform: `perspective(500px) rotateX(${this.state.rotX}deg) rotateY(${this.state.rotY}deg) scale3d(1, 1, 1)`}}/>
                     </Col>
                     <Col xs="12" className="text-center mt-auto">
