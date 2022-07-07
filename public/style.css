@@ -1,17 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;600;800&family=Pacifico&display=swap');
 
 :root {
     --my-red: #da3232;
-    --my-red-dark: #C11919;
+    --my-red-dark: #c11919;
     --my-white: #f2f2f2;
     --off-white: #f6f6f6;
 }
 
 body {
-    font-family: "Poppins", sans-serif !important;
+    font-family: "Karla", sans-serif !important;
+    background-color: var(--my-white) !important;
 }
 .accent {
     font-family: "Pacifico", cursive !important;
+}
+
+.bg-accent {
+    background-color: var(--off-white);
 }
 
 .divider {
@@ -29,7 +34,6 @@ a.primary:hover  {
     color: var(--off-white) !important;
 }
 
-#true-content {
+#header, #footer {
     background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, var(--off-white) 10px, var(--off-white) 20px);
-    background-color: var(--my-white);
 }
