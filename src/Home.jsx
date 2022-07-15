@@ -58,7 +58,7 @@ export default class Home extends React.Component {
                                     <Divider/>
                                     <Icon name="Discord" icon="fab fa-discord fa-fw" url="https://discord.gg/FG7cxurrga" colour="text-muted" fullWidth={this.props.fullWidth}/>
                                     <Divider/>
-                                    <Icon name="GitHub" icon="fab fa-github fa-fw" url="https://github.com/Bappy0X" colour="text-muted" fullWidth={this.props.fullWidth}/>
+                                    <Icon name="GitHub" icon="fab fa-github fa-fw" url="https://github.com/joshvtech" colour="text-muted" fullWidth={this.props.fullWidth}/>
                                     <Divider/>
                                     <Icon name="Dribbble" icon="fab fa-dribbble fa-fw" url="https://dribbble.com/joshvtech" colour="text-muted" fullWidth={this.props.fullWidth}/>
                                 </Row>
