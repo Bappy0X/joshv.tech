@@ -1,11 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 
-import "bootstrap/dist/css/bootstrap.min.css";
-
-import Home from "./Home"
+import BusinessCard from "./BusinessCard"
+import Portfolio from "./Portfolio";
+import { Layout } from "./Layout";
 
 ReactDOM.render(
-	<Home/>,
+	<BrowserRouter>
+		<Routes>
+			<Route path="/" element={<Layout/>}>
+				<Route index element={<BusinessCard/>}/>
+				<Route path="/my-portfolio" element={<Portfolio/>}/>
+			</Route>
+		</Routes>
+	</BrowserRouter>,
 	document.getElementById("content")
 );

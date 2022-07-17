@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;600;800&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;900&family=Pacifico&display=swap');
 
 :root {
     --my-red: #da3232;
@@ -8,15 +8,11 @@
 }
 
 body {
-    font-family: "Karla", sans-serif !important;
+    font-family: "Poppins", sans-serif !important;
     background-color: var(--my-white) !important;
 }
 .accent {
     font-family: "Pacifico", cursive !important;
-}
-
-.bg-accent {
-    background-color: var(--off-white);
 }
 
 .divider {
@@ -24,16 +20,38 @@ body {
     height: 100%;
 }
 
-.primary {
+.text-primary {
     color: var(--my-red) !important;
 }
-a.primary:hover  {
+a.text-primary:hover {
     color: var(--my-red-dark) !important;
 }
-.secondary {
-    color: var(--off-white) !important;
+a.text-primary:focus {
+    color: var(--my-red-dark) !important;
 }
 
-#header, #footer {
+.bg-primary {
+    background-color: var(--my-red) !important;
+}
+.bg-secondary {
+    background-color: var(--my-red-dark) !important;
+}
+
+.bg-accent {
+    background-color: var(--off-white);
+}
+
+#content {
     background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, var(--off-white) 10px, var(--off-white) 20px);
+}
+
+.mt--3 {
+    margin-top: -1rem;
+}
+
+.rounded-lg {
+    border-radius: .8rem !important;
+}
+.rounded-xl {
+    border-radius: 5rem !important;
 }
