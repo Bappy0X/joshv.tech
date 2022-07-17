@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import { Container, Row, Col } from "react-bootstrap"
 import { Fade } from "react-reveal"
 
@@ -40,16 +41,21 @@ class ProjectCard extends React.Component {
 export default class Portfolio extends React.Component {
     render() {
         return(
-            <Container>
-                <Row>
-                    <ProjectCard img={MoveNJunkPro} name="Move 'n' Junk Pro" clientName="Terrence Carroll" url="https://movenjunkpro.com/" fade={150*0}/>
-                    <ProjectCard img={GaultonFitness} name="Gaulton Fitness" clientName="Harry Gaulton" url="https://gaultonfitness.co.uk/" overlap fade={150*1}/>
-                    <ProjectCard img={RAFAC} name="Royal Air Force Air Cadets" clientName="230 Sqn" url="https://230rafac.co.uk/" overlap fade={150*2}/>
-                    <ProjectCard img={FBALeadsUK} name="FBALeadsUK" clientName="AbstractTek Ltd" url="https://fbaleadsuk.com/" overlap fade={150*3}/>
-                    <ProjectCard img={FBALeadsUKApp} name="FBALeadsUK App" clientName="AbstractTek Ltd" url="https://app.fbaleadsuk.com/" overlap fade={150*4}/>
-                    <ProjectCard img={FBAMultiTool} name="FBAMultiTool" clientName="AbstractTek Ltd" url="https://www.fbamultitool.com/" overlap fade={150*5}/>
-                </Row>
-            </Container>
+            <>
+                <Helmet>
+                    <title>My Portfolio &bull; joshv.tech</title>
+                </Helmet>
+                <Container>
+                    <Row>
+                        <ProjectCard img={MoveNJunkPro} name="Move 'n' Junk Pro" clientName="Terrence Carroll" url="https://movenjunkpro.com/" fade={150*0}/>
+                        <ProjectCard img={GaultonFitness} name="Gaulton Fitness" clientName="Harry Gaulton" url="https://gaultonfitness.co.uk/" overlap fade={150*1}/>
+                        <ProjectCard img={RAFAC} name="Royal Air Force Air Cadets" clientName="230 Sqn" url="https://230rafac.co.uk/" overlap fade={150*2}/>
+                        <ProjectCard img={FBALeadsUK} name="FBALeadsUK" clientName="AbstractTek Ltd" url="https://fbaleadsuk.com/" overlap fade={150*3}/>
+                        <ProjectCard img={FBALeadsUKApp} name="FBALeadsUK App" clientName="AbstractTek Ltd" url="https://app.fbaleadsuk.com/" overlap fade={150*4}/>
+                        <ProjectCard img={FBAMultiTool} name="FBAMultiTool" clientName="AbstractTek Ltd" url="https://www.fbamultitool.com/" overlap fade={150*5}/>
+                    </Row>
+                </Container>
+            </>
         )
     }
 }
