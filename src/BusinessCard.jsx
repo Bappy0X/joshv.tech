@@ -13,7 +13,7 @@ export default class BusinessCard extends React.Component {
         return(
             <>
                 <Helmet>
-                    <title>Business Card &bull; joshv.tech</title>
+                    <title>My Business Card &bull; joshv.tech</title>
                 </Helmet>
                 <Row className="no-gutters my-3" onMouseMove={this.onMouseMove}>
                     <Col xs="12" className="text-center">

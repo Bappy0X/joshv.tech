@@ -6,7 +6,7 @@ class Icon extends React.Component {
     render() {
         return(
             <Col xs="auto" className="m-2">
-                <a className={this.props.colour + " text-decoration-none"} href={this.props.url} target="_blank" rel="noreferrer"><i className={this.props.icon + " mr-1"}></i>{this.props.name}</a>
+                <a className="text-muted text-decoration-none" href={this.props.url} target="_blank" rel="noreferrer"><i className={this.props.icon + " mr-1 text-primary"}></i>{this.props.name}</a>
             </Col>
         )
     }
@@ -51,6 +51,8 @@ class Layout extends React.Component {
                         <Col/>
                         <Tab url="/" title="My Business Card"/>
                         <Tab url="/my-portfolio" title="My Portfolio"/>
+                        <Tab url="/my-services" title="My Services"/>
+                        <Tab url="/contact-me" title="Contact Me"/>
                         <Col/>
                     </Row>
                 </Col>
@@ -61,19 +63,15 @@ class Layout extends React.Component {
                 </Col>
                 <Col xs={12} className="mt-auto mb-3">
                     <Row className="no-gutters justify-content-center">
-                        <Icon name="LinkedIn" icon="fab fa-linkedin-in fa-fw" url="https://www.linkedin.com/in/joshua-vaughan/" colour="text-muted"/>
-                        {/* <Divider/> */}
-                        <Icon name="YouTube" icon="fab fa-youtube fa-fw" url="https://www.youtube.com/channel/UCgL7ZU52tlnWeV7JdJY3pzg" colour="text-muted"/>
-                        {/* <Divider/> */}
-                        <Icon name="Instagram" icon="fab fa-instagram fa-fw" url="https://www.instagram.com/joshvtech/" colour="text-muted"/>
-                        {/* <Divider/> */}
-                        <Icon name="Discord" icon="fab fa-discord fa-fw" url="https://discord.gg/FG7cxurrga" colour="text-muted" fullWidth={this.props.fullWidth}/>
-                        {/* <Divider/> */}
-                        <Icon name="GitHub" icon="fab fa-github fa-fw" url="https://github.com/joshvtech" colour="text-muted" fullWidth={this.props.fullWidth}/>
-                        {/* <Divider/> */}
-                        <Icon name="Dribbble" icon="fab fa-dribbble fa-fw" url="https://dribbble.com/joshvtech" colour="text-muted" fullWidth={this.props.fullWidth}/>
+                        <Icon name="Instagram" icon="fab fa-instagram fa-fw" url="https://www.instagram.com/joshvtech/"/>
+                        <Icon name="Pinterest" icon="fab fa-pinterest fa-fw" url="https://www.pinterest.co.uk/joshvtech/"/>
+                        <Icon name="Dribbble" icon="fab fa-dribbble fa-fw" url="https://dribbble.com/joshvtech"/>
+                        <Icon name="YouTube" icon="fab fa-youtube fa-fw" url="https://www.youtube.com/channel/UCgL7ZU52tlnWeV7JdJY3pzg"/>
+                        <Icon name="Discord" icon="fab fa-discord fa-fw" url="https://discord.gg/FG7cxurrga"/>
+                        <Icon name="GitHub" icon="fab fa-github fa-fw" url="https://github.com/joshvtech"/>
+                        <Icon name="LinkedIn" icon="fab fa-linkedin-in fa-fw" url="https://www.linkedin.com/company/joshvtech/"/>
                     </Row>
-                    <p className="mb-0 text-center text-muted">JOSHV.TECH IS THE TRADING NAME OF VAUGHAN AND PARTNERS LIMITED (Company No. 14212089)</p>
+                    <p className="mb-0 text-center text-muted"><span className="text-primary">JOSHV.TECH</span> IS THE TRADING NAME OF <a href="https://find-and-update.company-information.service.gov.uk/company/14212089" target="_blank" rel="noreferrer" className="text-primary">VAUGHAN AND PARTNERS LIMITED</a> (No. <a href="https://find-and-update.company-information.service.gov.uk/company/14212089" target="_blank" rel="noreferrer" className="text-primary">14212089</a>)</p>
                 </Col>
             </Row>
         )
