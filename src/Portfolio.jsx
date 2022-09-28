@@ -17,7 +17,7 @@ class ProjectCard extends React.Component {
                 <Fade left delay={this.props.fade}>
                     <div className="text-center">
                         <a href={this.props.url} target="_blank" rel="noreferrer">
-                            <img src={this.props.img} className="w-75 rounded-lg"/>
+                            <img src={this.props.img} alt="Portfolio" className="w-75 rounded-lg"/>
                         </a>
                         <Row className={`no-gutters py-2 ${this.props.overlap && "mt--3"} px-3 bg-light rounded-xl position-relative`}>
                             <Col>
