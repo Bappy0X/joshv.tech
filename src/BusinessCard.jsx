@@ -4,7 +4,7 @@ import { Row, Col } from "react-bootstrap"
 
 import { MouseContext } from "./Layout"
 
-import card from "./img/card.jpg";
+import card from "./img/card.png";
 import logo from "./img/logo.png";
 import { Link } from "react-router-dom";
 
