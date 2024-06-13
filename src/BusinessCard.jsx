@@ -25,12 +25,12 @@ export default class BusinessCard extends React.Component {
                 <Helmet>
                     <title>Home &bull; joshv.tech</title>
                 </Helmet>
-                <Row className="no-gutters my-3" onMouseMove={this.onMouseMove}>
-                    <Col xs="4" className="ml-auto text-center">
+                <Row className="no-gutters mt-5" onMouseMove={this.onMouseMove}>
+                    <Col xs="12" xl="4" className="ml-auto text-center">
                         <img src={card} alt="My Business Card" style={{height: "500px", transformStyle: "preserve-3d", transform: `perspective(500px) rotateX(${this.context.rotX}deg) rotateY(${this.context.rotY}deg) scale3d(1, 1, 1)`}}/>
                     </Col>
-                    <Col xs="3" className="my-auto mr-auto text-left ">
-                        <img src={logo} alt="My Logo" style={{height: "150px"}}/>
+                    <Col xs="10" md="auto" xl="3" className="my-5 my-xl-auto mx-auto ml-xl-0 text-left ">
+                        <img src={logo} alt="My Logo" style={{height: "150px"}} className="d-none d-xl-block"/>
                         <hr className="my-4"/>
                         <p className="text-primary">Your partner in Websites, Software, Teams, AI or anything tech!</p>
                         <ContactLink icon="envelope" url="mailto:me@joshv.tech" text="me@joshv.tech"/>

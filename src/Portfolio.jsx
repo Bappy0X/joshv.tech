@@ -55,7 +55,6 @@ export default class Portfolio extends React.Component {
                         </Col>
                         <Col></Col>
                     </Row>
-                    
                     <Row>
                         <ProjectCard img={PennySkips} name="PennySkips" url="https://pennyskips.com/" overlap fade={150*0}/>
                         <ProjectCard img={Locked} name="CountyStream" overlap fade={150*0}/>
