@@ -50,10 +50,10 @@ export default class Portfolio extends React.Component {
                         <Col className="my-auto">
                             <h4 className="my-4"><Link to="/" className="text-muted text-decoration-none"><i className="fas fa-arrow-left text-muted"></i> Back to Home</Link></h4>    
                         </Col>
-                        <Col className="col-auto">
+                        <Col xs="auto">
                         <Link to="/"><img src={logo} alt="My Logo" style={{height: "80px"}}/></Link>
                         </Col>
-                        <Col></Col>
+                        <Col className="d-none d-md-block"></Col>
                     </Row>
                     <Row>
                         <ProjectCard img={PennySkips} name="PennySkips" url="https://pennyskips.com/" overlap fade={150*0}/>

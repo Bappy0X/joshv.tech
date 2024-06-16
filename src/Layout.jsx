@@ -46,13 +46,13 @@ class Layout extends React.Component {
     render() {
         return(
             <Row className="no-gutters min-vh-100" onMouseMove={this.onMouseMove}>
-                <Col xs={12} className="mb-auto"></Col>
-                <Col xs={12} className="my-auto">
+                <Col xs="12" className="mb-auto"></Col>
+                <Col xs="12" className="my-auto">
                     <MouseContext.Provider value={{rotX: this.state.rotX, rotY: this.state.rotY}}>
                         <Outlet/>
                     </MouseContext.Provider>
                 </Col>
-                <Col xs={12} className="mt-auto mb-3">
+                <Col xs="12" className="mt-auto mb-3">
                     <Row className="no-gutters justify-content-center">
                         <Icon name="LinkedIn" icon="fab fa-linkedin-in fa-fw" url="https://www.linkedin.com/company/joshvtech/"/>
                         <Icon name="Instagram" icon="fab fa-instagram fa-fw" url="https://www.instagram.com/joshvtech/"/>
